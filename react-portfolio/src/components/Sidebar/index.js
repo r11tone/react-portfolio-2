@@ -2,6 +2,8 @@ import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
 import LogoTR from '../../assets/images/tr.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => ( 
   <div className='nav-bar'>
@@ -19,6 +21,26 @@ const Sidebar = () => (
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
       </nav>
+      <ul>
+        <li>
+          <a 
+          target="_blank" 
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/tyler-ritone-427878174/"
+          >
+          <FontAwesomeIcon icon={faLinkedin} color="#00ffd9" />
+          </a>
+        </li>
+        <li>
+          <a 
+          target="_blank" 
+          rel="noreferrer"
+          href="https://github.com/r11tone"
+          >
+          <FontAwesomeIcon icon={faGithub} color="#00ffd9" />
+          </a>
+        </li>
+      </ul>
   </div>
 )
 
